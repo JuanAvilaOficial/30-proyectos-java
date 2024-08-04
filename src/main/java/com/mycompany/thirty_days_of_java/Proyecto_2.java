@@ -10,10 +10,10 @@ import java.util.Scanner;
  * @author juanavila
  * 
  */
-public class SecondDay {
+public class Proyecto_2 {
     
     /*
-    Dia 2/30:
+    Proyecto 2/30:
         Desarrolla una calculadora básica que pueda realizar 
         operaciones aritméticas simples como suma, resta, 
         multiplicación y división.
@@ -27,7 +27,7 @@ public class SecondDay {
         
         System.out.print(""
             + "*------------------------------------------------------------*\n"
-            + "Dia #2: Calculafora simple. \n"    
+            + "Proyecto #2: Calculafora simple. \n"    
             + "Desarrollo de una calculadora básica que pueda realixzar      \n"
             + "realizar operaciones aritméticas simples como suma, resta,    \n"
             + "multiplicación y división.                                    \n"

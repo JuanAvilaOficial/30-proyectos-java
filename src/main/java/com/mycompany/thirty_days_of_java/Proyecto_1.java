@@ -10,10 +10,10 @@ package com.mycompany.thirty_days_of_java;
  *
  * @author juanavila 
  */
-public class FirstDay {
+public class Proyecto_1 {
 
     /*
-        Dia 1/30:
+        Proyecto 1/30:
             Este es un sencillo programa de 'Hola Mundo' 
             hecho con el lenguaje de programación Java.
      */
@@ -21,7 +21,7 @@ public class FirstDay {
     {
         System.out.print(""
             + "*------------------------------------------------------------*\n"
-            + "Dia #1: Primer \"Hola Mundo!\"\n"    
+            + "Proyecto #1: Primer \"Hola Mundo!\"\n"    
             + "      \n"
             + "*------------------------------------------------------------*");
         

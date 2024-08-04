@@ -18,8 +18,9 @@ public class Thirty_days_of_java {
     {
        
        Scanner sc = new Scanner(System.in);
-       FirstDay firstDay = new FirstDay();
-       SecondDay secondDay = new SecondDay();
+       Proyecto_1 firstDay = new Proyecto_1();
+       Proyecto_2 secondDay = new Proyecto_2();
+       Proyecto_3 thirdDay = new Proyecto_3();
        
        String numProyect;
        
@@ -29,6 +30,8 @@ public class Thirty_days_of_java {
        
        numProyect = sc.nextLine();
        numProyect = numProyect.toUpperCase();
+       
+              
        while (!numProyect.equals("exit"))
        {
            switch (numProyect) {
@@ -39,7 +42,7 @@ public class Thirty_days_of_java {
                        secondDay.calculadoraBasica();
                     break;
                    case "3":
-                       System.out.println("Aun se encuentra en desarrollo");
+                       thirdDay.adivinaElNumero();
                     break;
                     case "4":
                        System.out.println("Aun se encuentra en desarrollo");
@@ -126,6 +129,7 @@ public class Thirty_days_of_java {
                        System.out.println("Dato no valido, da un numero del 1 "
                                + "al 30 o escribe exit para salir");
            }
+           System.out.print("Coloca el proyecto que desea ver y presione ");
            numProyect = sc.nextLine();
        }
        //
