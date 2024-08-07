@@ -14,11 +14,11 @@ import java.util.Scanner;
 public class Proyecto_3 {
         /*
     Proyecto 3/30:
-        
+        Adivina un numero del 1 al 10
     */
     public void adivinaElNumero(){  
         
-        System.out.println(messang("Proyecto #3: Adivina el numero" ));
+        System.out.println(mensaje("Proyecto #3: Adivina el numero" ));
         
         boolean flag = false;
         Random random = new Random();                
@@ -26,37 +26,37 @@ public class Proyecto_3 {
         Scanner sc = new Scanner(System.in);
         int respuesta = 0;
                 
-        System.out.println(messang("Adivina el numero del 1 al 10 "));
+        System.out.println(mensaje("Adivina el numero del 1 al 10 "));
                 
         while(!flag)
         {        
             try {
-                System.out.print(messang("Que numero das?..."));
+                System.out.print(mensaje("Que numero das?..."));
                 respuesta = sc.nextInt(); 
                 if(respuesta != num)
                 {
                     String s = respuesta > num? "bajo":"alto"; 
-                    System.out.println(messang("Lastima, tienes que pensar en un "
+                    System.out.println(mensaje("Lastima, tienes que pensar en un "
                             + "numero mas " + s));
                 }
                 else
                 {
                     flag = true;
-                    System.out.println(messang("GANASTE!!!!"));
+                    System.out.println(mensaje("GANASTE!!!!"));
                     sc.nextLine();
                 }
             } catch (Exception e) {
-                System.out.print(messang("DATO NO VALIDO!!!!!!! DEBE SER SOLO "
+                System.out.print(mensaje("DATO NO VALIDO!!!!!!! DEBE SER SOLO "
                         + "NUMEROS ENTEROS Y POSITIVO NO MAYORES A AL NUMERO 10\n"));
                 sc.nextLine();
             } 
             
         }                       
-        System.out.println(messang("exit\n"
+        System.out.println(mensaje("exit\n"
                 + "*------------------------------------------------------------*\n"));
     }
     
-    String messang(String s)
+    String mensaje(String s)
     {
         return "\n*------------------------------------------------------------*\n"
             + s;
