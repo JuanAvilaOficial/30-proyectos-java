@@ -27,9 +27,6 @@ public class Thirty_days_of_java {
        System.out.print("Coloca el proyecto que desea ver y presione enter: ");       
        numProyect = sc.nextLine().toLowerCase();
        
-       Proyecto_6 proyecto_6 = new Proyecto_6();
-       proyecto_6.Gestion_Biblioteca();
-       
        while (!numProyect.equals("exit"))
        {
            proyectos_Controller.proyectos(numProyect);
