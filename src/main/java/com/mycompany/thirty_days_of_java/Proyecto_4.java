@@ -110,11 +110,19 @@ public class Proyecto_4 {
         }
         System.out.println(mensaje("Exit... GOODBYE!!!!!"));
     }
-    
+    void titulo()
+    {
+        String s = 
+                  "\n*------------------------------------------------------------*\n"
+                + "PROYECTO #4:Convertidor de unidades\n"
+                + " Crea un convertidor de unidades (como centímetros a "
+                + "pulgadas, centrimetro a yardas y kilómetros a etc).\n"
+                + "\n*------------------------------------------------------------*\n";
+        System.out.print(s);
+    }
     String mensaje(String s)
     {
         return "\n*------------------------------------------------------------*\n"
             + s;
-    }
-    
+    }    
 }

@@ -19,17 +19,24 @@ public class Proyecto_1 {
      */
     public void helloWorld()
     {
-        System.out.print(""
-            + "*------------------------------------------------------------*\n"
-            + "Proyecto #1: Primer \"Hola Mundo!\"\n"    
-            + "      \n"
-            + "*------------------------------------------------------------*");
-        
+        titulo();
         System.out.println("Hello World!");
         
         System.out.print("*-------------------------------------*\n"
                        + "                 exit                  \n"
                        + "*-------------------------------------*");
+    }
+    void titulo()
+    {
+        String s = 
+                  "\n*------------------------------------------------------------*\n"
+                + "PROYECTO #1: Hola Mundo \n"
+                + "Este es un sencillo programa de 'Hola Mundo' hecho con \n"
+                + "el lenguaje de programación Java. El repositorio contiene \n"
+                + "el código fuente, las instrucciones para compilar y ejecutar \n"
+                + "el programa.\n"
+                + "\n*------------------------------------------------------------*\n";
+        System.out.print(s);
     }
     
 }

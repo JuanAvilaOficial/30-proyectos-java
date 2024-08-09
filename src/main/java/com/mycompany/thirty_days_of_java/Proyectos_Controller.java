@@ -11,11 +11,12 @@ package com.mycompany.thirty_days_of_java;
 public class Proyectos_Controller {
     
     public void proyectos(String s)
-    {
+    {        
         Proyecto_1 proyecto_1 = new Proyecto_1();
         Proyecto_2 proyecto_2 = new Proyecto_2();
         Proyecto_3 proyecto_3 = new Proyecto_3();
         Proyecto_4 proyecto_4 = new Proyecto_4();
+        Proyecto_5 proyecto_5 = new Proyecto_5();
 
         switch (s) {
             case "1":
@@ -31,7 +32,7 @@ public class Proyectos_Controller {
                 proyecto_4.Convertidor_de_unidades();
                 break;
             case "5":
-                System.out.println("Aun se encuentra en desarrollo");
+                proyecto_5.Palindromo();
                 break;
             case "6":
                 System.out.println("Aun se encuentra en desarrollo");
@@ -115,7 +116,9 @@ public class Proyectos_Controller {
     }
     public String lista_proyecto(){
         String pro[] = {"No found","Hola mundo.","Calculadora basica.",
-            "Juego de adivina el numero.","Convertidor de unidades"};
+            "Juego de adivina el numero.","Convertidor de unidades",
+            "Verificador de palindromo.",
+        };
         
         for (int i = 1; i < pro.length; i++) {
             System.out.println(i + ". " + pro[i] + "\n");

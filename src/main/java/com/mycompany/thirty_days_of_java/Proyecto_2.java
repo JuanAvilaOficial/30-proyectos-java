@@ -94,4 +94,14 @@ public class Proyecto_2 {
                        + "                 exit                  \n"
                        + "*-------------------------------------*");
     }
+    void titulo()
+    {
+        String s = 
+                  "\n*------------------------------------------------------------*\n"
+                + "PROYECTO #2: Calculadora básica\n"
+                + "Un programa que verifique si una palabra \n"
+                + "o frase es un palíndromo.\n"
+                + "\n*------------------------------------------------------------*\n";
+        System.out.print(s);
+    }
 }

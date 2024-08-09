@@ -22,16 +22,16 @@ public class Thirty_days_of_java {
               
        String numProyect;
        
-       System.out.println("30 proyectos en Java 4/30\n");
+       System.out.println("30 proyectos en Java 5/30\n");
        System.out.println(proyectos_Controller.lista_proyecto());
-       System.out.print("Coloca el proyecto que desea ver y presione enter: ");
-       
+       System.out.print("Coloca el proyecto que desea ver y presione enter: ");       
        numProyect = sc.nextLine().toLowerCase();
        
        while (!numProyect.equals("exit"))
        {
            proyectos_Controller.proyectos(numProyect);
-           System.out.println(proyectos_Controller.lista_proyecto());
+           System.out.println("30 proyectos en Java 5/30");
+           proyectos_Controller.lista_proyecto();
            System.out.print("Coloca el proyecto que desea ver y presione enter: ");
            numProyect = sc.nextLine().toLowerCase();
        }

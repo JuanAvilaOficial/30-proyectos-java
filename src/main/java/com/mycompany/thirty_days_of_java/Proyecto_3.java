@@ -55,7 +55,16 @@ public class Proyecto_3 {
         System.out.println(mensaje("exit\n"
                 + "*------------------------------------------------------------*\n"));
     }
-    
+    void titulo()
+    {
+        String s = 
+                  "\n*------------------------------------------------------------*\n"
+                + "PROYECTO #3: Juego de adivinanza de números\n"
+                + "Construye un juego en el que el programa genera un número \n"
+                + "aleatorio y el usuario tiene que adivinarlo.\n"
+                + "\n*------------------------------------------------------------*\n";
+        System.out.print(s);
+    }
     String mensaje(String s)
     {
         return "\n*------------------------------------------------------------*\n"
