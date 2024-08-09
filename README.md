@@ -1,4 +1,4 @@
-##  30 PROYECTOS EN JAVA
+## 30 PROYECTOS EN JAVA
 
 Proyectos sencillos pensados para practicar en Java, creando un hábito de constancia para seguir mejorando la lógica de programación y crear cada vez proyectos más elaborados.
 
