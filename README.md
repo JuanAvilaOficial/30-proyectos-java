@@ -1,13 +1,27 @@
-# ##  30 PROYECTOS EN JAVA
+##  30 PROYECTOS EN JAVA
 
-Proyecto pensado para parcticar Java y mostrar mis campasidades.
+Proyectos sencillos pensados para practicar en Java, creando un hábito de constancia para seguir mejorando la lógica de programación y crear cada vez proyectos más elaborados.
+
+Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-dias-de-proyectos-en-java/tree/main)
 
 ### [x] Proyecto # 1: Hola Mundo!!!
+Este es un sencillo programa de 'Hola Mundo' hecho con el lenguaje de programación Java. El repositorio contiene el código fuente, las instrucciones para compilar y ejecutar el programa.
+
 ### [x] Proyecto # 2: Calculadora básica
+Desarrolla una calculadora básica que pueda realizar operaciones aritméticas simples como suma, resta, multiplicación y división.
+
 ### [x] Proyecto # 3: Juego de adivinanza de números
+Construye un juego en el que el programa genera un número aleatorio y el usuario tiene que adivinarlo.
+
 ### [x] Proyecto # 4: Convertidor de unidades
+Crea un convertidor de unidades (como centímetros a pulgadas, centrimetro a yardas y kilómetros).
+
 ### [x] Proyecto # 5: Verificador de palíndromos
+Escribe un programa que verifique si una palabra o frase es un palíndromo.
+
 ### [] Proyecto # 6: Programa de gestión de bibliotecas...
+Crea un sistema de gestión de bibliotecas con funcionalidades para agregar, eliminar y buscar libros.
+
 ### [] Proyecto # 7: 
 ### [] Proyecto # 8: 
 ### [] Proyecto # 9: 
