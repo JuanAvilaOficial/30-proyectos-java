@@ -4,9 +4,9 @@
 
 package com.mycompany.thirty_days_of_java;
 
+import com.mycompany.thirty_days_of_java.Proyecto_6.Proyecto_6;
 import java.util.Scanner;
 import com.mycompany.thirty_days_of_java.*;
-
 
 /**
  *
@@ -26,6 +26,9 @@ public class Thirty_days_of_java {
        System.out.println(proyectos_Controller.lista_proyecto());
        System.out.print("Coloca el proyecto que desea ver y presione enter: ");       
        numProyect = sc.nextLine().toLowerCase();
+       
+       Proyecto_6 proyecto_6 = new Proyecto_6();
+       proyecto_6.Gestion_Biblioteca();
        
        while (!numProyect.equals("exit"))
        {

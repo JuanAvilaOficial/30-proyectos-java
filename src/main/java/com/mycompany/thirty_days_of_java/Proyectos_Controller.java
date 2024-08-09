@@ -4,6 +4,8 @@
  */
 package com.mycompany.thirty_days_of_java;
 
+import com.mycompany.thirty_days_of_java.Proyecto_6.Proyecto_6;
+
 /**
  *
  * @author Juan Avila
@@ -17,6 +19,7 @@ public class Proyectos_Controller {
         Proyecto_3 proyecto_3 = new Proyecto_3();
         Proyecto_4 proyecto_4 = new Proyecto_4();
         Proyecto_5 proyecto_5 = new Proyecto_5();
+        Proyecto_6 proyecto_6 = new Proyecto_6();
 
         switch (s) {
             case "1":
@@ -35,7 +38,7 @@ public class Proyectos_Controller {
                 proyecto_5.Palindromo();
                 break;
             case "6":
-                System.out.println("Aun se encuentra en desarrollo");
+                proyecto_6.Gestion_Biblioteca();
                 break;
             case "7":
                 System.out.println("Aun se encuentra en desarrollo");
