@@ -11,30 +11,16 @@ import java.util.Scanner;
  * 
  */
 public class Proyecto_2 {
-    
-    /*
-    Proyecto 2/30:
-        Desarrolla una calculadora básica que pueda realizar 
-        operaciones aritméticas simples como suma, resta, 
-        multiplicación y división.
-    */
+
     public void calculadoraBasica()
     {
+        boolean flag = true;
         double firstNumber = 0.0 ,secondNumber = 0.0;
         String result = null, operator;
-        
         Scanner sc = new Scanner(System.in);
+        operator = sc.nextLine();    
         
-        System.out.print(""
-            + "*------------------------------------------------------------*\n"
-            + "Proyecto #2: Calculafora simple. \n"    
-            + "Desarrollo de una calculadora básica que pueda realixzar      \n"
-            + "realizar operaciones aritméticas simples como suma, resta,    \n"
-            + "multiplicación y división.                                    \n"
-            + "*------------------------------------------------------------*");
-                
-        operator = sc.nextLine();
-        boolean flag = true;
+        titulo();
         
         while (flag)
         {
@@ -100,7 +86,7 @@ public class Proyecto_2 {
                   "\n*------------------------------------------------------------*\n"
                 + "PROYECTO #2: Calculadora básica\n"
                 + "Un programa que verifique si una palabra \n"
-                + "o frase es un palíndromo.\n"
+                + "o frase es un palíndromo."
                 + "\n*------------------------------------------------------------*\n";
         System.out.print(s);
     }

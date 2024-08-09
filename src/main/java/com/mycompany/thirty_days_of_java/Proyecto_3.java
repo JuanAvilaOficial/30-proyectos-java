@@ -27,7 +27,8 @@ public class Proyecto_3 {
         int respuesta = 0;
                 
         System.out.println(mensaje("Adivina el numero del 1 al 10 "));
-                
+        titulo();
+        
         while(!flag)
         {        
             try {
@@ -61,7 +62,7 @@ public class Proyecto_3 {
                   "\n*------------------------------------------------------------*\n"
                 + "PROYECTO #3: Juego de adivinanza de números\n"
                 + "Construye un juego en el que el programa genera un número \n"
-                + "aleatorio y el usuario tiene que adivinarlo.\n"
+                + "aleatorio y el usuario tiene que adivinarlo."
                 + "\n*------------------------------------------------------------*\n";
         System.out.print(s);
     }

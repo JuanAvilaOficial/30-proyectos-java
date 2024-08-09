@@ -23,7 +23,7 @@ public class Proyecto_4 {
         double resultado=0.0;
         Scanner sc = new Scanner(System.in);
         DecimalFormat decimalFormat = new DecimalFormat("#.00");
-        
+        titulo();
         while(!flag)
         {            
             try 
@@ -115,8 +115,8 @@ public class Proyecto_4 {
         String s = 
                   "\n*------------------------------------------------------------*\n"
                 + "PROYECTO #4:Convertidor de unidades\n"
-                + " Crea un convertidor de unidades (como centímetros a "
-                + "pulgadas, centrimetro a yardas y kilómetros a etc).\n"
+                + "Crea un convertidor de unidades (como centímetros a \n"
+                + "pulgadas, centrimetro a yardas y kilómetros a etc)."
                 + "\n*------------------------------------------------------------*\n";
         System.out.print(s);
     }
