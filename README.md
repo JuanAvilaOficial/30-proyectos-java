@@ -19,11 +19,11 @@ Crea un convertidor de unidades (como centímetros a pulgadas, centrimetro a yar
 ### [x] Proyecto # 5: Verificador de palíndromos
 Escribe un programa que verifique si una palabra o frase es un palíndromo.
 
-### [] Proyecto # 6: Programa de gestión de bibliotecas...
+### [ ] Proyecto # 6: Programa de gestión de bibliotecas...
 Crea un sistema de gestión de bibliotecas con funcionalidades para agregar, eliminar y buscar libros.
 
-### [] Proyecto # 7: 
-### [] Proyecto # 8: 
+- ### [ ] Proyecto # 7: 
+### [ ] Proyecto # 8: 
 ### [] Proyecto # 9: 
 ### [] Proyecto # 10:
 ### [] Proyecto # 11:
