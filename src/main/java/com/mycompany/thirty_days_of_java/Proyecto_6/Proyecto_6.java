@@ -30,14 +30,14 @@ public class Proyecto_6 {
             comando = sc.nextLine();
            flag = !comando.toLowerCase().equals("exit");
            
-           if(!flag)
+           if(flag)
            {
                switch (comando) {
                    case "1":
+                        System.out.print("Agregar");
                        
                        break;
                     case "2":
-                       
                        break;
                     case "3":
                        
@@ -64,5 +64,5 @@ public class Proyecto_6 {
             s 
             + "\n*------------------------------------------------------------*\n"
         );
-    }
+    }    
 }
