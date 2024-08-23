@@ -5,6 +5,7 @@
 package com.mycompany.thirty_days_of_java.Proyecto_6;
 
 import java.util.Scanner;
+import javax.annotation.processing.Messager;
 
 /**
  *
@@ -28,13 +29,14 @@ public class Proyecto_6 {
                     + "2. Eliminar\n"
                     + "3. Buscar");
             comando = sc.nextLine();
-           flag = !comando.toLowerCase().equals("exit");
+           flag = comando.toLowerCase().equals("exit");
            
            if(flag)
            {
                switch (comando) {
                    case "1":
-                        System.out.print("Agregar");
+                        mensaje("Agregar libro");
+                        comando = sc.nextLine().toLowerCase();
                        
                        break;
                     case "2":
@@ -60,8 +62,7 @@ public class Proyecto_6 {
     }
     void mensaje(String s)
     {
-        System.out.println(
-            s 
+        System.out.println(s 
             + "\n*------------------------------------------------------------*\n"
         );
     }    

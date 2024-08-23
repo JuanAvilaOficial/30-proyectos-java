@@ -1,0 +1,6 @@
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.build-impl.xml

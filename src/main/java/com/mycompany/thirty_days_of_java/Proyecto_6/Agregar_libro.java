@@ -4,7 +4,8 @@
  */
 package com.mycompany.thirty_days_of_java.Proyecto_6;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
@@ -14,7 +15,7 @@ public class Agregar_libro {
     
     String nombreLibro, autor, descripcionLibro;
     int id;
-    ArrayList<String> libros = new ArrayList<>();
+    public Map<String,String> libros = new HashMap<String, String>();
     
     public void Agregar_libro(String autor, String nombreLibro, String descripcionLibro)
     {        
@@ -23,6 +24,5 @@ public class Agregar_libro {
         this.descripcionLibro = descripcionLibro;   
         
         
-    }
-    
+    }    
 }
