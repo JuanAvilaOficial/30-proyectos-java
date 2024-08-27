@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.thirty_days_of_java.Proyecto_6;
+package com.mycompany.thirty_days_of_java;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import javax.annotation.processing.Messager;
 
@@ -13,31 +14,48 @@ import javax.annotation.processing.Messager;
  */
 public class Proyecto_6 {
     
+    ArrayList<String> nombreLibro = new ArrayList<>(), 
+            autor = new ArrayList<>(), 
+            descripcionLibro  = new ArrayList<>();
+    int id = 0;
     public void Gestion_Biblioteca()
     {        
-        Agregar_libro agregar_libro = new Agregar_libro();
-        Eliminar_libro eliminar_libro = new Eliminar_libro();
+        
         
         titulo();
         String comando;
         boolean flag = true;
         Scanner sc = new Scanner(System.in);
         mensaje("BIENVENIDO A LA BIBLIOTECA\n");
+        
         if (flag) {
             mensaje("QUE ES LO QUE DESEAS HACER?:\n"
                     + "1. Agregar\n"
                     + "2. Eliminar\n"
                     + "3. Buscar");
             comando = sc.nextLine();
-           flag = comando.toLowerCase().equals("exit");
+            flag = !comando.toLowerCase().equals("exit");
            
            if(flag)
            {
                switch (comando) {
                    case "1":
-                        mensaje("Agregar libro");
-                        comando = sc.nextLine().toLowerCase();
+                       mensaje("Agregar libro");
                        
+                       System.out.print("Nombre del nuevo libro: ");
+                       comando = sc.nextLine().toLowerCase();
+                       nombreLibro.add(comando.toString());
+                       
+                       System.out.print("Nombre del autor: ");
+                       comando = sc.nextLine().toLowerCase();
+                       autor.add(comando.toString());
+                       
+                       System.out.print("Una breve descripcion del tema: ");
+                       comando = sc.nextLine().toLowerCase();
+                       autor.add(comando.toString());
+                       
+                       mensaje("");                       
+                       mensaje("El nuevo libro se agrego \n"); 
                        break;
                     case "2":
                        break;

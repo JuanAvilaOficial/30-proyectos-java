@@ -4,8 +4,6 @@
  */
 package com.mycompany.thirty_days_of_java;
 
-import com.mycompany.thirty_days_of_java.Proyecto_6.Proyecto_6;
-
 /**
  *
  * @author Juan Avila
