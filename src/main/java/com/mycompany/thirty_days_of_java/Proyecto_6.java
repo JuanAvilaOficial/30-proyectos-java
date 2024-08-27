@@ -17,7 +17,6 @@ public class Proyecto_6 {
     ArrayList<String> nombreLibro = new ArrayList<>(), 
             autor = new ArrayList<>(), 
             descripcionLibro  = new ArrayList<>();
-    int id = 0;
     public void Gestion_Biblioteca()
     {        
         
@@ -53,11 +52,11 @@ public class Proyecto_6 {
                        System.out.print("Una breve descripcion del tema: ");
                        comando = sc.nextLine().toLowerCase();
                        autor.add(comando.toString());
-                       
-                       mensaje("");                       
-                       mensaje("El nuevo libro se agrego \n"); 
+                                                                    
+                       mensaje("El nuevo libro se agrego..."); 
                        break;
                     case "2":
+                        
                        break;
                     case "3":
                        
