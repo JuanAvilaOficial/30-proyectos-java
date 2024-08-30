@@ -43,20 +43,45 @@ public class Proyecto_6 {
                        
                        System.out.print("Nombre del nuevo libro: ");
                        comando = sc.nextLine().toLowerCase();
-                       nombreLibro.add(comando.toString());
+                       flag = !comando.toLowerCase().equals("exit");
+                       if(flag)
+                       {
+                            nombreLibro.add(comando.toString());
                        
-                       System.out.print("Nombre del autor: ");
-                       comando = sc.nextLine().toLowerCase();
-                       autor.add(comando.toString());
+                            System.out.print("Nombre del autor: ");
+                            comando = sc.nextLine().toLowerCase();
+                            autor.add(comando.toString());
                        
-                       System.out.print("Una breve descripcion del tema: ");
-                       comando = sc.nextLine().toLowerCase();
-                       autor.add(comando.toString());
+                            System.out.print("Una breve descripcion del tema: ");
+                            comando = sc.nextLine().toLowerCase();
+                            autor.add(comando.toString());
                                                                     
-                       mensaje("El nuevo libro se agrego..."); 
+                            mensaje("El nuevo libro se agrego..."); 
+                        }
+                        flag = true;
                        break;
                     case "2":
+                        mensaje("Eliminar libro");
+
+                        System.out.print("Nombre del nuevo libro: ");
+                        comando = sc.nextLine().toLowerCase();
+                        flag = !comando.toLowerCase().equals("exit");
                         
+                        if (flag) 
+                        {
+                            nombreLibro.add(comando.toString());
+
+                            System.out.print("Nombre del autor: ");
+                            comando = sc.nextLine().toLowerCase();
+                            autor.add(comando.toString());
+
+                            System.out.print("Una breve descripcion del tema: ");
+                            comando = sc.nextLine().toLowerCase();
+                            autor.add(comando.toString());
+
+                            mensaje("El nuevo libro se agrego...");
+                        }
+                        flag = true;
                        break;
                     case "3":
                        
@@ -82,5 +107,20 @@ public class Proyecto_6 {
         System.out.println(s 
             + "\n*------------------------------------------------------------*\n"
         );
-    }    
+    }   
+    //Metodos para eliminar registro de libro en la biblioteca
+    void eliminarById(int id)
+    {
+        
+    }
+    
+    void eliminarByNombreLibro(String nombreLibro)
+    {
+        
+    }
+    
+    void eliminarByAutor(String autor)
+    {
+        
+    }
 }
