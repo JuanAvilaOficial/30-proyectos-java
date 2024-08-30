@@ -18,8 +18,10 @@ public class Proyecto_6 {
             autor = new ArrayList<>(), 
             descripcionLibro  = new ArrayList<>();
     public void Gestion_Biblioteca()
-    {        
-        
+    {                
+        nombreLibro.add("juan");             
+        autor.add("manuel");
+        descripcionLibro.add("sdfsdfsd");
         
         titulo();
         String comando;
@@ -27,7 +29,7 @@ public class Proyecto_6 {
         Scanner sc = new Scanner(System.in);
         mensaje("BIENVENIDO A LA BIBLIOTECA\n");
         
-        if (flag) {
+        while (flag) {
             mensaje("QUE ES LO QUE DESEAS HACER?:\n"
                     + "1. Agregar\n"
                     + "2. Eliminar\n"
@@ -54,7 +56,7 @@ public class Proyecto_6 {
                        
                             System.out.print("Una breve descripcion del tema: ");
                             comando = sc.nextLine().toLowerCase();
-                            autor.add(comando.toString());
+                            descripcionLibro.add(comando.toString());
                                                                     
                             mensaje("El nuevo libro se agrego..."); 
                         }
@@ -63,7 +65,7 @@ public class Proyecto_6 {
                     case "2":
                         mensaje("Eliminar libro");
 
-                        System.out.print("Nombre del nuevo libro: ");
+                        System.out.print("Nombre del libro a eliminar: ");
                         comando = sc.nextLine().toLowerCase();
                         flag = !comando.toLowerCase().equals("exit");
                         
@@ -77,7 +79,20 @@ public class Proyecto_6 {
                         flag = true;
                        break;
                     case "3":
-                       
+                        mensaje("Buscar libro");
+
+                        System.out.print("Nombre del libro a buscar: ");
+                        comando = sc.nextLine().toLowerCase();
+                        flag = !comando.toLowerCase().equals("exit");
+                        
+                        if (flag)
+                        {
+                            if(!esNumero(comando))
+                                buscar(comando);
+                            else
+                                buscarById(Integer.parseInt(comando));                            
+                        }
+                        flag = true;
                        break;
                    default:
                        throw new AssertionError();
@@ -101,7 +116,7 @@ public class Proyecto_6 {
             + "\n*------------------------------------------------------------*\n"
         );
     }   
-    //Metodos para eliminar registro de libro en la biblioteca
+    //Metodo para eliminacion de libro por id
     void eliminarById(int id)
     {
         if(id <= nombreLibro.size())
@@ -114,7 +129,7 @@ public class Proyecto_6 {
         else
             mensaje("El libro no existe...");
     }
-    
+    //Metodo para eliminacion de libro por nombre o autor
     void eliminar(String string)
     {
         int id = 0;
@@ -152,7 +167,22 @@ public class Proyecto_6 {
         else
             mensaje("El libro no existe...");   
     }
-        
+    
+    //Metodo de busqueda de libro por id
+    void buscarById(int id)
+    {
+        System.out.println(nombreLibro.size());
+        if(id <= nombreLibro.size())
+        {
+            mensaje("Id: "+ (id+1)
+                      + "\n nombre del libro: " + nombreLibro.get(id)
+                      + "\n Autor: " + autor.get(id)
+                      + "\n Descripcion del libro: " + descripcionLibro.get(id));        
+        }
+        else
+            mensaje("El libro no existe...");
+    }
+    //Metodo de busqueda de libro por nombre o autor
     void buscar(String string)
     {
         int id = 0;
@@ -163,7 +193,6 @@ public class Proyecto_6 {
             {
                 id = i;
                 encontrado = true;
-                break;
             }
         }
         
@@ -180,16 +209,12 @@ public class Proyecto_6 {
         }
         
         if(encontrado)
-            {
-                mensaje("Id:${id + 1} \n"
-                      + "nombre del libro: ${nombreLibro.get(id)} \n"
-                      + "Autor: ${autor.get(id)}\n"
-                      + "Descripcion del libro: ${des}");
-                autor.remove(id);
-                nombreLibro.remove(id);
-                descripcionLibro.remove(id);
-                
-            }
+        {
+            mensaje("Id: "+ (id+1)
+                      + "\n nombre del libro: " + nombreLibro.get(id)
+                      + "\n Autor: " + autor.get(id)
+                      + "\n Descripcion del libro: " + descripcionLibro.get(id));
+        }
             else
                 mensaje("El libro no existe...");
     }

@@ -10,7 +10,7 @@ package com.mycompany.thirty_days_of_java;
  */
 public class Proyectos_Controller {
     
-    public void proyectos(String s)
+    public void proyectos(String proyecto)
     {        
         Proyecto_1 proyecto_1 = new Proyecto_1();
         Proyecto_2 proyecto_2 = new Proyecto_2();
@@ -19,7 +19,7 @@ public class Proyectos_Controller {
         Proyecto_5 proyecto_5 = new Proyecto_5();
         Proyecto_6 proyecto_6 = new Proyecto_6();
 
-        switch (s) {
+        switch (proyecto) {
             case "1":
                 proyecto_1.helloWorld();                       
                 break;                    
