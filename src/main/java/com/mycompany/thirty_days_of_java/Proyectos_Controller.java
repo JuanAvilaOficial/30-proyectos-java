@@ -118,7 +118,7 @@ public class Proyectos_Controller {
     public String lista_proyecto(){
         String pro[] = {"No found","Hola mundo.","Calculadora basica.",
             "Juego de adivina el numero.","Convertidor de unidades",
-            "Verificador de palindromo.",
+            "Verificador de palindromo.","Biblioteca."
         };
         
         for (int i = 1; i < pro.length; i++) {
