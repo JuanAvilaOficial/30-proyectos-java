@@ -19,9 +19,9 @@ public class Proyecto_6 {
             descripcionLibro  = new ArrayList<>();
     public void Gestion_Biblioteca()
     {                
-        nombreLibro.add("juan");             
-        autor.add("manuel");
-        descripcionLibro.add("sdfsdfsd");
+        nombreLibro.add("Don Quijote de la mancha");             
+        autor.add("Miguel de Cervantes Saavedra");
+        descripcionLibro.add("Es la primera obra genuinamente desmitificadora de la tradición caballeresca y cortés por su tratamiento burlesco. Representa la primera novela moderna y la primera novela polifónica; como tal, ejerció un enorme influjo en toda la narrativa europea. Por considerarse «el mejor trabajo literario jamás escrito», encabezó la lista de las mejores obras literarias de la historia, que se estableció con las votaciones de cien grandes escritores de 54 nacionalidades a petición del Club Noruego del Libro y Bokklubben World Library en 2002; así, fue la única excepción en el estricto orden alfabético que se había dispuesto.");
         
         titulo();
         String comando;
@@ -39,7 +39,7 @@ public class Proyecto_6 {
            
            if(flag)
            {
-               switch (comando) {
+                switch (comando) {
                    case "1":
                        mensaje("Agregar libro");
                        
@@ -94,10 +94,10 @@ public class Proyecto_6 {
                         }
                         flag = true;
                        break;
-                   default:
+                    default:
                        throw new AssertionError();
-               }
-           }            
+                }
+            }            
         }
     }
      void titulo()
