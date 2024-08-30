@@ -67,19 +67,12 @@ public class Proyecto_6 {
                         comando = sc.nextLine().toLowerCase();
                         flag = !comando.toLowerCase().equals("exit");
                         
-                        if (flag) 
+                        if (flag)
                         {
-                            nombreLibro.add(comando.toString());
-
-                            System.out.print("Nombre del autor: ");
-                            comando = sc.nextLine().toLowerCase();
-                            autor.add(comando.toString());
-
-                            System.out.print("Una breve descripcion del tema: ");
-                            comando = sc.nextLine().toLowerCase();
-                            autor.add(comando.toString());
-
-                            mensaje("El nuevo libro se agrego...");
+                            if(!esNumero(comando))
+                                eliminar(comando);
+                            else
+                                eliminarById(Integer.parseInt(comando));                            
                         }
                         flag = true;
                        break;
@@ -111,16 +104,103 @@ public class Proyecto_6 {
     //Metodos para eliminar registro de libro en la biblioteca
     void eliminarById(int id)
     {
-        
+        if(id <= nombreLibro.size())
+        {
+            autor.remove(id);
+            nombreLibro.remove(id);
+            descripcionLibro.remove(id);        
+            mensaje("El libro se elimino...");
+        }
+        else
+            mensaje("El libro no existe...");
     }
     
-    void eliminarByNombreLibro(String nombreLibro)
+    void eliminar(String string)
     {
+        int id = 0;
+        boolean eliminar = false;
         
+        for (int i = 0; i < nombreLibro.size(); i++) {
+            if (nombreLibro.get(i).equals(string))
+            {
+                id = i;
+                eliminar = true;
+                break;
+            }
+        }
+        
+        if(!eliminar)
+        {
+            
+            for (int i = 0; i < autor.size(); i++) {
+                if (this.autor.get(i).equals(string))
+                {
+                    id = i;
+                    eliminar = true;
+                    break;
+                }
+            }
+        }
+        
+        if(eliminar)
+        {
+            autor.remove(id);
+            nombreLibro.remove(id);
+            descripcionLibro.remove(id);
+            mensaje("El libro se elimino...");
+        }
+        else
+            mensaje("El libro no existe...");   
     }
-    
-    void eliminarByAutor(String autor)
-    {
         
+    void buscar(String string)
+    {
+        int id = 0;
+        boolean encontrado = false;
+        
+        for (int i = 0; i < nombreLibro.size(); i++) {
+            if (nombreLibro.get(i).equals(string))
+            {
+                id = i;
+                encontrado = true;
+                break;
+            }
+        }
+        
+        if(!encontrado)
+        {            
+            for (int i = 0; i < autor.size(); i++) {
+                if (this.autor.get(i).equals(string))
+                {
+                    id = i;
+                    encontrado = true;
+                    break;
+                }
+            }
+        }
+        
+        if(encontrado)
+            {
+                mensaje("Id:${id + 1} \n"
+                      + "nombre del libro: ${nombreLibro.get(id)} \n"
+                      + "Autor: ${autor.get(id)}\n"
+                      + "Descripcion del libro: ${des}");
+                autor.remove(id);
+                nombreLibro.remove(id);
+                descripcionLibro.remove(id);
+                
+            }
+            else
+                mensaje("El libro no existe...");
+    }
+    boolean esNumero(String s){
+        boolean esNumero;
+        try {
+            Integer.parseInt(s);
+            esNumero = true;
+        } catch (NumberFormatException exception) {
+            esNumero = false;
+        }
+        return esNumero;
     }
 }
