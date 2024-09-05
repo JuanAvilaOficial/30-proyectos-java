@@ -19,11 +19,15 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 ### Proyecto # 5: Verificador de palíndromos
 - [x] Escribe un programa que verifique si una palabra o frase es un palíndromo.
 
-### Proyecto # 6: Programa de gestión de bibliotecas...
+### Proyecto # 6: Programa de gestión de bibliotecas
 - [X] Crea un sistema de gestión de bibliotecas con funcionalidades para agregar, eliminar y buscar libros.
 
-### Proyecto # 7: 
-### Proyecto # 8: 
+### Proyecto # 7: Juego del ahorcado
+- [ ] Desarrolla un juego del ahorcado en la consola.
+
+### Proyecto # 8: Agenda de contactos
+- [ ] Crea una agenda de contactos donde los usuarios puedan agregar, eliminar y buscar contactos.
+
 ### Proyecto # 9: 
 ### Proyecto # 10:
 ### Proyecto # 11:
