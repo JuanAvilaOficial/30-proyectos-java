@@ -16,10 +16,10 @@ public class Proyecto_8 {
     
     ArrayList<String> nombreContacto = new ArrayList<>(), 
             numeroContacto = new ArrayList<>();
-    public void Gestion_Biblioteca()
+    public void Agenda()
     {                
         nombreContacto.add("David");             
-        numeroContacto.add("3118946231");
+        numeroContacto.add("3218946231");
                 
         titulo();
         String comando;
@@ -39,23 +39,21 @@ public class Proyecto_8 {
            {
                 switch (comando) {
                    case "1":
-                       mensaje("Agregar libro");
+                       mensaje("Agregar contacto");
                        
-                       System.out.print("Nombre del nuevo libro: ");
+                       System.out.print("Nombre del nuevo contacto: ");
                        comando = sc.nextLine().toLowerCase();
                        flag = !comando.toLowerCase().equals("exit");
+                       
                        if(flag)
                        {
                             nombreContacto.add(comando.toString());
                        
-                            System.out.print("Nombre del numeroContacto: ");
+                            System.out.print("Nombre del nuevo contacto: ");
                             comando = sc.nextLine().toLowerCase();
                             numeroContacto.add(comando.toString());
-                       
-                            System.out.print("Una breve descripcion del tema: ");
-                            comando = sc.nextLine().toLowerCase();
                                                                     
-                            mensaje("El nuevo libro se agrego..."); 
+                            mensaje("El nuevo contacto se agrego..."); 
                         }
                         flag = true;
                        break;

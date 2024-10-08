@@ -18,6 +18,10 @@ public class Proyectos_Controller {
         Proyecto_4 proyecto_4 = new Proyecto_4();
         Proyecto_5 proyecto_5 = new Proyecto_5();
         Proyecto_6 proyecto_6 = new Proyecto_6();
+        Proyecto_8 proyecto_8 = new Proyecto_8();
+        Proyecto_10 proyecto_10 = new Proyecto_10();
+        
+        proyecto_10.Ordenamiento();
 
         switch (proyecto) {
             case "1":
@@ -42,18 +46,18 @@ public class Proyectos_Controller {
                 System.out.println("Aun se encuentra en desarrollo");
                 break;
             case "8":
-                System.out.println("Aun se encuentra en desarrollo");
+                proyecto_8.Agenda ();
                 break;
-                    case "9":
-                       System.out.println("Aun se encuentra en desarrollo");
-                    break;
-                    case "10":
-                       System.out.println("Aun se encuentra en desarrollo");
-                    break;
-                    case "11":
-                       System.out.println("Aun se encuentra en desarrollo");
-                    break;
-                    case "12":
+            case "9":
+                    System.out.println("Aun se encuentra en desarrollo");
+                break;
+            case "10":
+                    System.out.println("Aun se encuentra en desarrollo");
+                break;
+            case "11":
+                    System.out.println("Aun se encuentra en desarrollo");
+                break;
+            case "12":
                        System.out.println("Aun se encuentra en desarrollo");
                     break;
                     case "13":
