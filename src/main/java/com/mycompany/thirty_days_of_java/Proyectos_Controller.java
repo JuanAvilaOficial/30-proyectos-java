@@ -22,7 +22,7 @@ public class Proyectos_Controller {
         Proyecto_10 proyecto_10 = new Proyecto_10();
         
         proyecto_10.Ordenamiento();
-
+                
         switch (proyecto) {
             case "1":
                 proyecto_1.helloWorld();                       
@@ -52,10 +52,10 @@ public class Proyectos_Controller {
                     System.out.println("Aun se encuentra en desarrollo");
                 break;
             case "10":
-                    System.out.println("Aun se encuentra en desarrollo");
+                    proyecto_10.Ordenamiento();
                 break;
             case "11":
-                    System.out.println("Aun se encuentra en desarrollo");
+                    
                 break;
             case "12":
                        System.out.println("Aun se encuentra en desarrollo");

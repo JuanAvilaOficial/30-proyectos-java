@@ -21,7 +21,7 @@ public class Thirty_days_of_java {
               
        String numProyect;
        
-       System.out.println("30 proyectos en Java 6/30\n");
+       System.out.println("30 proyectos en Java 7/30\n");
        System.out.println(proyectos_Controller.lista_proyecto());
        System.out.print("Coloca el proyecto que desea ver y presione enter: ");       
        numProyect = sc.nextLine().toLowerCase();
