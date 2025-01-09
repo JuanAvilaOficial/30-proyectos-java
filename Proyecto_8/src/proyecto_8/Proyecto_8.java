@@ -21,13 +21,11 @@ public class Proyecto_8 {
         // TODO code application logic here
         nombreContacto.add("David");             
         numeroContacto.add("3218946231");
-        mensaje(
-                  "\n*------------------------------------------------------------*\n"
-                + "PROYECTO #8: Agenda de contactos\n"
-                + "Crea una agenda de contactos donde los usuarios puedan \n"
-                + "agregar, eliminar y buscar contactos. "
-                + "\n*------------------------------------------------------------*\n"
-        );
+        mensaje("""
+                PROYECTO #8: Agenda de contactos
+                Crea una agenda de contactos donde los usuarios puedan
+                agregar, eliminar y buscar contactos.                
+                """);
         
         String comando;
         boolean flag = true;

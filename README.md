@@ -23,7 +23,7 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 - [x] Crea un sistema de gestión de bibliotecas con funcionalidades para agregar, eliminar y buscar libros.
 
 ### Proyecto # 7: Juego del ahorcado
-- [ ] Desarrolla un juego del ahorcado en la consola.
+- [x] Desarrolla un juego del ahorcado en la consola.
 
 ### Proyecto # 8: Agenda de contactos
 - [x] Crea una agenda de contactos donde los usuarios puedan agregar, eliminar y buscar contactos.

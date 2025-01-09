@@ -4,7 +4,9 @@
  */
 package proyecto_7;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -18,53 +20,81 @@ public class Proyecto_7 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ArrayList<String> palabraAdivinar = new ArrayList<>();
         ArrayList<String> palabras = new ArrayList<>();
-        palabras.add("robo");
-        int errores = 0, intentos = 0;
+        
+        palabraAdivinar.add("robo");
+        palabraAdivinar.add("torre");
+        palabraAdivinar.add("horror");
+        palabraAdivinar.add("correcto");
+        palabraAdivinar.add("helado");
+        
+        int errores = 0, intentos = 10, index = 0;
         String comando = "", palabra = "";
-        boolean flag = false;        
         Ahorcado ahorcado = new Ahorcado();
+        
+        boolean flag = false;        
         Scanner sc = new Scanner(System.in);
+        index = new Random().nextInt(0, palabraAdivinar.size());
         
         System.out.println("""
                            PROYECTO #7: Ahoracado
                            Desarrolla un juego del ahorcado en la consola.
                            """);
         
-         for(int i = 0; i < palabras.get(0).length(); i++)
-                palabra = palabra + "X";
+        for(int i = 0; i < palabraAdivinar.get(index).length(); i++)
+        {    
+            palabras.add("X"); 
+            palabra = palabra + "X";
+        }
+
         while(!flag)
         {                        
             try
             {
-                ahorcado.dibujo(errores);
-                System.out.println(palabra);
-                boolean error = false;
-               
-                System.out.println("una letra: ");
-                comando = sc.nextLine();
-                
-                flag = comando.toLowerCase().equals("exit");
-                
-                char lr = comando.charAt(0);
-                for(int i = 0; i < palabras.get(0).length(); i++)
+                flag = (intentos <= 0 || 
+                        palabraAdivinar.get(index).equals(palabra) || 
+                        comando.equals("exit"));
+
+                if(intentos != 0 && !palabraAdivinar.get(index).equals(palabra))
                 {
-                    System.out.println("char: " + palabras.get(0).charAt(i));
-                    System.out.println("lr: " + lr);
-                    System.out.println(palabra.charAt(i) == 'X' && palabras.get(0).charAt(i) == lr);
-                    if(palabra.charAt(i) == 'X' && palabras.get(0).charAt(i) == lr)
-                        palabra.replace('X', lr);
-                    if(palabras.get(0).charAt(i) == lr)
-                        error = true;
+                    System.out.println("Escribe una letra: ");
+                    comando = sc.nextLine().toUpperCase();
+                    System.out.println(ahorcado.dibujo(errores,palabra));
+                    intentos--;
+                    
+                    boolean error = false;
+                    for(int i = 0; i < palabraAdivinar.get(index).length(); i++)
+                    {
+                        String letra = String.valueOf(palabraAdivinar.get(index).charAt(i));                    
+                        if(letra.toUpperCase().equals(comando) && palabras.get(i).equals("X"))
+                        {
+                            error = true;
+                            palabras.set(i, letra.toUpperCase()); 
+                        }
+                    }                
+                    if(!error)
+                        errores++;
+                    palabra = "";
+                    for(int i = 0; i < palabras.size(); i++)
+                        palabra = palabra + palabras.get(i).toString();
+                    
+                    System.out.println("palabra: " + palabra);
                 }
-                if(!error)
-                    errores++;                
-                
-                System.out.println(palabra);
-                                
+
             } catch(Exception e){}                        
         }
+        if (palabraAdivinar.get(index).equals(palabra))
+            System.out.println("""
+                               Felicidades Ganaste!!!
+                               """);
+        else
+            System.out.println("""
+                               Perdiste >:3 !!!
+                               """);
         
+        System.out.println("Fin del programa...");
+     
     }
     
 }
