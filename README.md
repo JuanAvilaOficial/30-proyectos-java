@@ -30,8 +30,13 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 
 ### Proyecto # 9: Aplicación de chat simple
 - [ ] Construye una aplicación de chat simple para enviar y recibir mensajes.
-### Proyecto # 10:
-### Proyecto # 11:
+
+### Proyecto # 10: Algoritmos de ordenación
+- [x] Implementa algoritmos de ordenación comunes como la ordenación por burbuja, la ordenación por selección y la ordenación rápida.
+
+### Proyecto # 11: Algoritmos de búsqueda
+- [ ] Implementa algoritmos de búsqueda comunes como la búsqueda lineal y la búsqueda binaria.
+
 ### Proyecto # 12:
 ### Proyecto # 13:
 ### Proyecto # 14:
