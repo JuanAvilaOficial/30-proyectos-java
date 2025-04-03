@@ -28,7 +28,8 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 ### Proyecto # 8: Agenda de contactos
 - [x] Crea una agenda de contactos donde los usuarios puedan agregar, eliminar y buscar contactos.
 
-### Proyecto # 9: 
+### Proyecto # 9: Aplicación de chat simple
+- [ ] Construye una aplicación de chat simple para enviar y recibir mensajes.
 ### Proyecto # 10:
 ### Proyecto # 11:
 ### Proyecto # 12:

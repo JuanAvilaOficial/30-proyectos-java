@@ -5,74 +5,70 @@
 package proyecto_10;
 
 import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
  * @author Juan Avila
  */
-public class Proyecto_10 {
+public class Proyecto_10 
+{
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println ("hola");
-        String[] lista = {"45","5","12","1","90"};
+        // TODO code application logic here       
+        int[] lista = new int[]{45,5,12,1,90};
+        Scanner scanner = new Scanner(System.in);
+        int longitud = 0;
         
-        //O_burbuja (lista);
-        O_Seleccion(lista);
-    }
-    static void O_burbuja(String[] lista){
-        int correctos = 0; 
-        boolean flag = false;
-        System.out.println ("lista aranca: " + Arrays.toString (lista));
-        while (!flag){
-            for (int i = 0; i < lista.length-1; i++)
-            {
-                if (i < lista.length-1)
-                {
-                    int num_actual = Integer.parseInt (lista[i]) , 
-                    num_siguiente = Integer.parseInt (lista[i+1]);
-                
-                    if(num_actual > num_siguiente)
-                    {
-                        lista[i] = String.valueOf (num_siguiente);
-                        lista[i+1] = String.valueOf (num_actual);
-                    } 
-                    else{
-                        correctos++;
-                    }
-                    System.out.println ("lista ordenando: " + Arrays.toString(lista));
-                }                
-            }
-            flag = (correctos == lista.length - 1);
-            correctos = 0;
-        }        
-        System.out.println ("lista ordenado: " + Arrays.toString (lista));
-    }
-    
-    static void O_Seleccion(String[] lista){
-        System.out.println ("lista aranca: " + Arrays.toString (lista));
-        for (int i = 0; i < lista.length - 1; i++)
+        System.out.println("""                   
+                PROYECTO #10: Algoritmos de ordenación
+                Implementa algoritmos de ordenación comunes como la 
+                ordenación por burbuja, la ordenación por selección 
+                y la ordenación rápida.
+                           
+                                        """);
+        
+        System.out.println("""                                
+                           Deseas crea una nueva lista númerica?
+                           [Y] yes o [N] no
+                           """);        
+        String temp = scanner.nextLine();
+        boolean flag  = (temp.toUpperCase().equals("Y") || 
+                temp.toUpperCase().equals("YES")
+                && temp.toUpperCase().equals("Y") || 
+                !temp.toUpperCase().equals("NO"));
+        
+        if(flag)
         {
-            for (int j = (i+1); j < lista.length; j++)
-            {
-                int num_actual = Integer.parseInt (lista[i]) , 
-                    num_siguiente = Integer.parseInt (lista[j]);
+            Random random = new  Random();
                 
-                if ( num_actual > num_siguiente)
-                {
-                    lista[i] = String.valueOf (num_siguiente);
-                    lista[j] = String.valueOf (num_actual);    
-                    System.out.println ("lista ordenando: " + Arrays.toString(lista));
-                }
+            System.out.println("""                                
+                           Qué tan larga la lista?
+                        """);    
+            longitud = scanner.nextInt();
+            lista = new int[longitud];
+              
+            for(int i = 0; i < longitud; i++)
+            {
+              lista[i] = random.nextInt(200) + 1;
             }
+            System.out.println("Lista desordenada: " + Arrays.toString(lista) 
+                    + "\n");
         }
-        System.out.println ("lista ordenado: " + Arrays.toString (lista));
-    }
-    private void O_Quicksort(String[] lista, int izquierda, int derecha){
+                        
+        OrdenamientoBurbuja burbuja = new OrdenamientoBurbuja(lista.clone());
+        OrdenamientoSeleccion seleccion = new OrdenamientoSeleccion(lista.clone());
+        OrdenamientoRapido sort = new OrdenamientoRapido();        
         
-    }
-    
+        sort.Ordenar(lista.clone(), 0, lista.length - 1);
+        
+        System.out.println("Algoritmos de ordenamiento: \n" );
+        burbuja.Ordenar();
+        seleccion.Ordenar();
+        System.out.println("- De Sort: " + Arrays.toString(sort.listaOrdenada));
+    }    
 }
