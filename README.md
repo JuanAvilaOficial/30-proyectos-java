@@ -41,6 +41,8 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 - [ ] Desarrolla una aplicación de tareas pendientes donde los usuarios puedan agregar, eliminar y completar tareas.
 
 ### Proyecto # 13:
+- [ ] Crea el juego de la serpiente.
+
 ### Proyecto # 14:
 ### Proyecto # 15:
 ### Proyecto # 16:
