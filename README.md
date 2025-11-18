@@ -29,7 +29,7 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 - [x] Crea una agenda de contactos donde los usuarios puedan agregar, eliminar y buscar contactos.
 
 ### Proyecto # 9: Aplicación de chat simple
-- [ ] Construye una aplicación de chat simple para enviar y recibir mensajes.
+- [x] Construye una aplicación de chat simple para enviar y recibir mensajes.
 
 ### Proyecto # 10: Algoritmos de ordenación
 - [x] Implementa algoritmos de ordenación comunes como la ordenación por burbuja, la ordenación por selección y la ordenación rápida.
@@ -38,7 +38,7 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 - [x] Implementa algoritmos de búsqueda comunes como la búsqueda lineal y la búsqueda binaria.
 
 ### Proyecto # 12:
-- [ ] Desarrolla una aplicación de tareas pendientes donde los usuarios puedan agregar, eliminar y completar tareas.
+- [x] Desarrolla una aplicación de tareas pendientes donde los usuarios puedan agregar, eliminar y completar tareas.
 
 ### Proyecto # 13:
 - [ ] Crea el juego de la serpiente.

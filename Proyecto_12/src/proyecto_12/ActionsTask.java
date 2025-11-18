@@ -4,12 +4,10 @@
  */
 package proyecto_12;
 
-import java.awt.Color;
+import javax.swing.JCheckBox;
 import java.awt.FlowLayout;
 import javax.swing.JButton;
-import javax.swing.JCheckBox;
 import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 /**
  *
