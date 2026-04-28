@@ -51,8 +51,7 @@ public class ClienteChatTCP extends Thread
             this.bufferedWriter.write(mensaje);
             this.bufferedWriter.newLine();
             this.bufferedWriter.flush();            
-            return true; 
-            
+            return true;             
         } 
         catch(IOException e)
         {
@@ -101,8 +100,7 @@ public class ClienteChatTCP extends Thread
             OutputStream outputStream = this.socket.getOutputStream();
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
             this.bufferedWriter = new BufferedWriter(outputStreamWriter);
-            recibeMensajes();   
-            inicializarRecepcion();
+            recibeMensajes();           
         } 
         catch(IOException e)
         {

@@ -4,8 +4,11 @@
  */
 package proyecto_12;
 
+import java.awt.Color;
+import java.awt.Dimension;
 import javax.swing.JCheckBox;
 import java.awt.FlowLayout;
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -26,34 +29,42 @@ public class ActionsTask {
     {
         JPanel newTask = new JPanel();        
         JCheckBox newCheckBoxTask = new JCheckBox(nameTask);
-        //JTextField textField = new JTextField(nameTask);
-        JButton deleteButton = new JButton("edit"),
-                editButton = new JButton("del");
         
+        JButton deleteButton = new JButton("del"), 
+                editButton   = new JButton("edit");
+        
+        newTask.setPreferredSize(new Dimension(40, 10));
         newTask.setLayout(new FlowLayout(FlowLayout.LEFT));
+        newTask.setBorder(BorderFactory.createLineBorder(Color.BLACK));
+        newTask.setBackground(Color.BLUE);
+        newTask.setOpaque(true);
         
-        newCheckBoxTask.addActionListener(l -> {
-            changeState(newTask, !newCheckBoxTask.isSelected());});
-        deleteButton.addActionListener(e -> {deleteTask(newTask);});
+        newCheckBoxTask.addActionListener(l -> 
+        {
+            changeState(newTask, !newCheckBoxTask.isSelected());
+        });
+        
+        deleteButton.addActionListener(e -> 
+        {
+            deleteTask(newTask);
+        });
         editButton.addActionListener(e -> {editTask();});
         
         newTask.add(newCheckBoxTask);
-        //newTask.add(textField);
+        
         newTask.add(deleteButton);
         newTask.add(editButton);
 
         containerTask.add(newTask);
-        
         containerTask.revalidate();
         containerTask.repaint();
     }
     
     void editTask()
-    {}
-    
-    void saveTask(JPanel task)
-    {}
-    
+    {
+        
+    }
+
     void changeState(JPanel task, boolean state)
     {
         task.setEnabled(state);
