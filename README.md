@@ -29,7 +29,7 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 - [x] Crea una agenda de contactos donde los usuarios puedan agregar, eliminar y buscar contactos.
 
 ### Proyecto # 9: Aplicación de chat simple
-- [ ] Construye una aplicación de chat simple para enviar y recibir mensajes.
+- [x] Construye una aplicación de chat simple para enviar y recibir mensajes.
 
 ### Proyecto # 10: Algoritmos de ordenación
 - [x] Implementa algoritmos de ordenación comunes como la ordenación por burbuja, la ordenación por selección y la ordenación rápida.
@@ -37,15 +37,21 @@ Idea tomada de [30 dias de proyectos en java](https://github.com/Trycatch-tv/30-
 ### Proyecto # 11: Algoritmos de búsqueda
 - [x] Implementa algoritmos de búsqueda comunes como la búsqueda lineal y la búsqueda binaria.
 
-### Proyecto # 12:
-- [ ] Desarrolla una aplicación de tareas pendientes donde los usuarios puedan agregar, eliminar y completar tareas.
+### Proyecto # 12: TODO List
+- [x] Desarrolla una aplicación de tareas pendientes donde los usuarios puedan agregar, eliminar y completar tareas.
 
-### Proyecto # 13:
-- [ ] Crea el juego de la serpiente.
+### Proyecto # 13: Juego de la serpiente
+- [X] Crea el juego de la serpiente.
 
-### Proyecto # 14:
-### Proyecto # 15:
-### Proyecto # 16:
+### Proyecto # 14: Verificador de la tarjeta de crédito
+- [ ] Escribe un programa que verifique la validez de los números de las tarjetas de crédito.
+
+### Proyecto # 15: E-commerce
+- [ ] Desarrolla una mini aplicación de comercio electrónico con funcionalidades básicas como mostrar productos y añadirlos al carrito.
+
+### Proyecto # 16: Algoritmos de cifrado
+- [ ] Implementa algoritmos de cifrado comunes como Caesar cipher, AES, y RSA.
+
 ### Proyecto # 17:
 ### Proyecto # 18:
 ### Proyecto # 19:
